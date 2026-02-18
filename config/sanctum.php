@@ -51,6 +51,19 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Hashing API Tokens
+    |--------------------------------------------------------------------------
+    |
+    | By default, API tokens are stored in plain text in your database. If you
+    | prefer, you may hash them for improved security. Hashed tokens cannot be
+    | retrieved after hashing, so you should store them immediately after creation.
+    |
+    */
+
+    'hash_api_tokens' => true,
+
+    /*
+    |--------------------------------------------------------------------------
     | Token Prefix
     |--------------------------------------------------------------------------
     |

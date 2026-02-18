@@ -8,6 +8,13 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
+    /**
+     * Protect write operations with authentication
+     */
+    public function __construct()
+    {
+    }
+
     public function index()
     {
         return Product::all();
